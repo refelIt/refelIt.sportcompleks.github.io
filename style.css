@@ -1,0 +1,1075 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 7%;
+    align-items: center;
+}
+
+header .logo h3 {
+    font-family:'Roboto';
+}
+header .logo h3 em{
+    color: #db545a;
+}
+header .nav_bar{
+    display: flex;
+}
+header .nav_bar a{
+    padding-right: 20px;
+    text-decoration: none;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    color: black;
+    font-size: 16px;
+}
+
+header .nav_bar a:hover{
+    color:aqua;
+    text-decoration:underline;
+}
+
+.block_swipers{
+    width: 100%;
+    margin: 0 auto;
+}
+.swiper {
+    width: auto;
+    max-height:595px;
+    max-width: 715px;
+    text-align: center;
+  }
+
+.swiper_title{
+    max-width: 515px;
+    margin: 0 auto;
+}
+.swiper-slide img{
+    width: 624px;
+    height: 417px;
+    background-size: contain;
+}
+
+.swiper_title h2{
+    font-size: 36px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    padding-bottom: 26px;
+}
+
+
+.swiper_title p{
+    font-size: 18px;
+    font-family: 'Open Sans';
+    line-height: 200%;
+    padding-bottom: 20px;
+}
+.swiper_title button{
+    padding: 14px 43px;
+    background-color: #db545a;
+    color: wheat;
+    border: none;
+    font-size: 16px;
+    font-family: 'Open Sans';
+}
+
+
+
+
+
+.menu_mobile{
+    display:none;
+}
+.burger-checkbox {
+    position: absolute;
+    visibility: hidden;
+  }
+  .burger {
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    border: none;
+    background: transparent;
+    width: 40px;
+    height: 26px;
+  }
+  .burger::before,
+  .burger::after {
+    content: '';
+    left: 0;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 10px;
+    background: #000;
+  }
+  .burger::before {
+    top: 0;
+    box-shadow: 0 11px 0 #000;
+    transition: box-shadow .3s .15s, top .3s .15s, transform .3s;
+  }
+  .burger::after {
+    bottom: 0;
+    transition: bottom .3s .15s, transform .3s;
+  }
+  .burger-checkbox:checked + .burger::before {
+    top: 11px;
+    transform: rotate(45deg);
+    box-shadow: 0 6px 0 rgba(0,0,0,0);
+    transition: box-shadow .15s, top .3s, transform .3s .15s;
+  }
+  .burger-checkbox:checked + .burger::after {
+    bottom: 11px;
+    transform: rotate(-45deg);
+    transition: bottom .3s, transform .3s .15s;
+  }
+  .menu-list {
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: grid;
+    gap: 12px;
+    padding: 42px 0;
+    margin: 0;
+    background: #292d33;
+    list-style-type: none;
+    transform: translateX(-100%);
+    transition: .3s;
+    width: 100%;
+    height: 100%;
+    align-content: space-around;
+  }
+  .menu-item {
+    display: block;
+    padding: 8px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+  }
+  .menu-item:hover {
+    background: rgba(255,255,255,.2)
+  }
+  .burger-checkbox:checked ~ .menu-list {
+    transform: translateX(0);
+  }
+
+.block_one{
+ padding: 0 10%;
+ display: flex;
+ padding-top: 60px;
+ justify-content: space-evenly;
+}
+
+.block_one .block_text{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 480px;
+    padding-left: 53px;
+    padding-right: 53px;
+    width: 50%;
+}
+
+.block_one .block_text .line{
+    width: 87px;
+    height: 9px;
+    background-color: #db545a;
+    margin-bottom: 23px;
+}
+.block_one .block_text .head_text_one{
+    font-size: 48px;
+    font-family: 'Montserrat', sans-serif;
+    color: #db545a;
+    margin-bottom: 10px;
+}
+.block_one .block_text .head_text_two{
+    padding-top: 6px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    padding-bottom: 20px;
+    line-height: 120%;
+}
+
+.block_one .block_text .text_three{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 20px;
+    line-height: 160%;
+}
+
+.block_one .block_text .btn_sign_up{
+    padding: 14px 43px;
+    font-size: 16px;
+    background-color: #db545a;
+    border: none;
+    color: white;
+    max-width: 260px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.block_one .block_photo{
+    width: 50%;
+}
+
+.block_two{
+    padding: 69px 5%;
+    
+}
+.section_items{
+    display: grid;
+    grid-template-columns: repeat(3, 25%);
+    justify-content: space-evenly;
+}
+.block_two .section_items .item{
+    padding: 20px;
+    background-color: #db545a;
+    margin-bottom: 55px;
+    text-align: center;
+    color:white;
+    opacity: 0.8;
+}
+
+.block_two .section_items .item img {
+    width: 64px;
+    height: 64px;
+    padding-bottom: 15px;
+}
+.block_two .section_items .item h4{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.block_three{
+    width: 100%;
+    padding: 69px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.block_three .fitness_text{
+    width: 40%;
+}
+
+.block_three .fitness_text h2{
+    padding-top: 26px;
+    padding-bottom: 20px;
+    font-size: 36px;
+    font-family: 'Roboto';
+}
+
+.block_three .fitness_text p{
+    font-family: 'Open Sans';
+    font-size: 18px;
+    line-height: 200%;
+    padding-bottom: 20px;
+}
+
+.block_three .fitness_text .btn_sign_up{
+    padding: 14px 43px;
+    font-size: 16px;
+    background-color: #db545a;
+    border: none;
+    color: white;
+    max-width: 260px;
+    font-family: 'Open Sans';
+}
+
+.block_three .fitness_images{
+    width: 40%;
+}
+
+.block_three .fitness_images img{
+    background-size: cover;
+   
+}
+
+.about_club{
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+    animation: fadeOut ease 2s;
+  -webkit-animation: fadeOut ease 2s;
+  -moz-animation: fadeOut ease 2s;
+  -o-animation: fadeOut ease 2s;
+  -ms-animation: fadeOut ease 2s;
+}
+
+/*.about_club .block_photo{
+    padding: 30px;
+    border: 20px solid #db545a;
+}*/
+
+.about_club .block_photo img{
+    max-height: 572px;
+    width: 100%;
+}
+.about_club .block_text{
+    padding-left: 60px;
+    max-width: 500px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+
+}
+
+.about_club .block_text h4{
+    font-size: 48px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.about_club .block_text p{
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: 'PT Sans', sans-serif;
+    line-height: 160%;
+}
+
+.about_club .block_text button{
+    padding: 14px 43px;
+    font-size: 16px;
+    background-color: #db545a;
+    border: none;
+    color: white;
+    max-width: 260px;
+    margin-top: 30px;
+    font-family: 'Open Sans';
+}
+
+.free_training{
+    padding-top: 361px;
+    margin-top: 40px;
+    filter: brightness(60%);
+    background-image: url(images/free_training.jpg);
+    background-size: cover;
+    padding-left: 8%;
+    padding-bottom: 120px;
+}
+.free_training h1{
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:700;
+    color: white;
+    max-width: 922px;
+    line-height: 110%;
+}
+.free_training h3{
+    margin-top: 30px;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 140%;
+    max-width: 630px;
+    font-family: 'Roboto';
+}
+
+.free_training form, .sign_up_block form{
+    padding-top: 37px;
+    display: flex;
+
+}
+
+.free_training form .mail, .sign_up_block form .mail{
+    width: 300px;
+    height:56px;
+    color: gray;
+    font-family: 'Open Sans';
+    font-size: 16px;
+}
+
+.free_training form .btn_sign_up, .sign_up_block form .btn_sign_up{
+    padding: 10px 30px;
+    font-size: 16px;
+    background-color: #db545a;
+    border: none;
+    color: white;
+    max-width: 260px;
+    height:60px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+}
+
+
+.why_we{
+    margin-top: 100px;
+    text-align: center;
+}
+
+.why_we .why_we_icons{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 8%;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.why_we .why_we_icons .icon_block{
+    max-width: 100px;
+    padding: 20px;
+}
+.why_we .why_we_icons .icon_block p{
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 700;
+}
+.why_we h1{
+    font-size: 36px;
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+
+.why_we p{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-family: 'Open Sans';
+    font-style: italic;
+}
+
+.why_we .items{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 8%;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.why_we .items .item{
+    max-width: 380px;
+    padding: 20px;
+    text-align: left;
+}
+
+.why_we .items .item:first-child{
+    background-color: #db545a;
+    color: white;
+}
+
+.why_we .items .third{
+    background-color: black;
+    color: white;
+}
+
+.why_we .items .item h3{
+    padding-top: 20px;
+    font-size: 30px;
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+
+.why_we .items .item p{
+   font-size: 16px;
+   line-height: 160%;
+   font-family: 'Open Sans';
+   font-style: normal;
+}
+
+.why_we .items .item a{
+    padding: 2px 0px;
+    font-family: 'Open Sans';
+    font-size: 14px;
+}
+
+.about_us{
+    margin-top:96px;
+    display: flex;
+}
+
+.about_us .photo{
+    width: 50%;
+}
+.about_us .text{
+    background-color: #db545a;
+    color: white;
+    padding-top: 30px;
+    text-align: center; 
+    width: 50%;  
+}
+.about_us .text h2{
+    font-size: 60px;
+    font-weight: 700;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.about_us .text p{
+    font-size: 20px;
+    font-style: italic;
+    line-height: 160%;
+    font-family: 'Open Sans';
+}
+
+.about_us .text .info{
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+.about_us .text .info .item{
+    padding: 30px;
+    text-align: center;
+}
+.about_us .text .info .item p{
+    padding: 0;
+}
+
+.just_training{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.just_training .first_block{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+.just_training .second_block{
+    display: flex;
+    align-items: center;
+}
+.just_training .second_block .photo{
+    max-height: 555px;
+}
+.just_training .block_line{
+    padding: 30px;
+    max-height: 372px;
+    margin-bottom: 10px;
+}
+
+.just_training .block_line .line{
+    width: 95px;
+    height: 372px;
+    background-color: #db545a;
+}
+
+.just_training .first_block .start_now{
+    padding: 30px;
+}
+
+.just_training .first_block .start_now p{
+    color: gray;
+    font-size: 14px;
+    line-height: 160%;
+    font-family: 'Open Sans';
+}
+
+.just_training .first_block .start_now button{
+    margin-top: 54px;
+    padding: 18px 45px;
+    background-color: #db545a;
+    border: none;
+    color: white;
+    font-family: 'Open Sans';
+    font-size: 16px;
+}
+
+.just_training .second_block .block_just_training{
+    padding: 30px;
+    padding-top: 0px;
+}
+
+.just_training .second_block .block_just_training h1{
+    font-size: 48px;
+    font-weight: 700;
+    color: #db545a;
+    line-height: 110%;
+    max-width: 313px;
+    font-family: 'Montserrat';
+}
+
+.just_training .second_block .block_just_training p{
+    padding-top: 20px;
+    font-size: 20px;
+    line-height: 160%;
+    padding-bottom: 20px;
+    font-family: 'Open Sans';
+}
+
+.just_training .second_block .block_just_training button{
+    padding: 14px 43px;
+    font-size: 16px;
+    background-color: #db545a;
+    border: none;
+    color: white;
+    max-width: 260px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.btn_sign_up {
+    padding: 14px 43px;
+    font-size: 16px;
+    background-color: #db545a;
+    border: none;
+    color: white;
+    max-width: 260px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.sign_up{
+    width: 100%;
+    background-color: #db545a;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.sign_up .sign_up_block{
+    text-align: center;
+    max-width: 720px;
+   margin: 0 auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 37px 53px;
+    padding-bottom: 0px 
+}
+
+.sign_up .sign_up_block h2{
+    font-size:36px;
+    font-weight: 700;
+    font-family: 'Roboto';
+}
+
+.sign_up .sign_up_block form{
+    justify-content: center;
+    padding-bottom: 60px;
+    font-family: 'Open Sans';
+    font-size: 16px;
+}
+
+.sign_up .social_icons_block{
+    background-color: #292d33;
+    text-align: center;
+    max-width: 720px;
+   margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 53px;
+}
+
+.sign_up .social_icons_block h3{
+    color: white;
+    font-size: 30px;
+    font-weight: 400;
+    padding-bottom: 17px;
+    font-family: 'Roboto';
+}
+
+footer{
+    display: flex;
+    background-color: black;
+    color: white;
+    padding: 60px;
+    justify-content: space-evenly;
+}
+
+footer .logo  h1{
+    padding-bottom: 17px;
+    font-family:'Roboto';
+}
+
+footer .logo  h1 em{
+    color: #db545a;
+}
+footer .logo  p{
+    font-family: 'Open Sans';
+    font-size: 16px;
+}
+
+footer .phone a{
+    font-family: 'PT Sans';
+    font-size: 20px;
+    color:#db545a;
+    padding-bottom: 17px;
+}
+
+footer .phone p{
+    font-family: 'Open Sans';
+    font-size: 16px;
+    color:white;
+    padding-top: 17px;
+}
+
+
+/*страница корпуса*/
+
+.corpus_blocks{
+    width: 100%;
+    text-align: center;
+}
+.corpus_blocks h1{
+    margin-bottom: 50px;
+    font-family: 'Roboto';
+}
+.corpus_blocks .corpus{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.corpus_blocks .corpus .corpus_images h2 {
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Montserrat';
+}
+
+.corpus_blocks .corpus .corpus_text{
+    padding-top: 50px;
+    text-align: left;
+    margin-left: 20px;
+    max-width: 50%;
+}
+.corpus_blocks .corpus .corpus_text h3{
+    font-family: 'Open Sans';
+    margin-bottom: 20px;
+}
+.corpus_blocks .corpus .corpus_text p{
+    font-family: 'Open Sans';
+    color: #919191;
+    font-size: auto;
+}
+
+/*страница запись*/
+.form_block{
+    background-color: #1d1d1d;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
+}
+.form_block form{
+    background-color: #272c2f;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    border-bottom: 5px solid #db545a;
+}
+.form_block .form_img{
+    width: auto;
+}
+.form_block form h3, .form_block form p{
+    color: white;
+}
+.form_block form h3{
+    padding-bottom: 20px;
+    font-family: 'Montserrat';
+}
+
+.form_block form p{
+    padding-bottom: 30px;
+    font-family: 'Open Sans'
+}
+
+.form_block form input{
+    background-color: #272727;
+    margin-bottom: 15px;
+    border: 1px solid rgb(146, 143, 143);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 96%;
+    color: white;
+    font-family: 'PT Sans';
+}
+.form_block form #textarea{
+    background-color: #272727;
+    margin-bottom: 15px;
+    border: 1px solid rgb(146, 143, 143);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 96%;
+    color: white;
+}
+
+
+
+@media (max-width: 1070px){
+    .block_one{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 250px;
+        display: block;
+        margin-top: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    
+    .block_one .block_text {
+        width: auto;
+        margin-bottom: 50px;
+    }
+    .block_one .block_photo {
+        width: auto;
+    }
+    .block_one .block_text {
+        width: auto;
+        margin-bottom: 50px;
+    }
+   
+    .form_block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .form_block form, .form_block .form_img{
+        width: 70%;
+    }
+    .form_block form{
+        margin-bottom: 50px;
+        padding-bottom: 10px;
+    }
+    .form_block .form_img{
+        display: none;
+    }
+    .corpus_blocks .corpus .corpus_images img{
+        width: 100%;
+    }
+    .corpus .corpus_text{
+        text-align: left;
+    }
+}
+
+@media (max-width:1024px) {
+    .about_us{
+        flex-direction: column;
+        width: 100%;
+    }
+    .about_us .photo{
+        display: none;
+    }
+    .about_us .text{
+        width: 100%;
+    }
+ }
+@media (max-width:1000px){
+    .section_items{
+        display: grid;
+        grid-template-columns: repeat(2, 35%);
+        justify-content: space-evenly;     
+    }
+}
+
+
+
+@media (max-width: 900px){
+    .corpus_blocks .corpus .corpus_text{
+        max-width: 100%;
+        padding-top: 0px;
+    }
+    .corpus_blocks .corpus{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+    .corpus .corpus_images h2{
+        margin-left: 48px;
+    }
+    .corpus_blocks .corpus .corpus_text p{
+        margin-bottom: 25px;
+    }
+    .about_club {
+        flex-direction: column;
+    }
+    .about_club .block_text {
+         padding-left: 0px; 
+         padding-right: 0px;
+    }
+    
+}
+
+@media (max-width: 768px){
+  /*  body{
+        width: 100%;
+    }
+    .block_one{
+        flex-direction: column;
+        align-items: center;
+    }
+    .block_one .block_photo {
+        width: auto;
+    }
+    .block_one .block_text {
+        width: auto;
+       
+        min-height: 556px;
+        padding-top: 0px;
+    }
+       .block_one .block_text {
+            padding-left: 0%;
+            padding-right: 0%;
+        }*/
+    .block_one .block_text {
+        padding-top: 0px;
+    }
+    .section_items{
+        display: grid;
+        grid-template-columns: repeat(2, 45%);
+        justify-content: space-evenly;     
+       
+    }
+  /*  .block_two{
+        margin-top: 520px;
+    }*/
+    .about_club{
+        flex-direction: column;
+    }
+    .about_club .block_text{
+        padding-top: 69px;
+    }
+  
+}
+ 
+@media (max-width: 576px){
+    .just_training{
+        flex-direction: column;
+    }
+   /* .just_training .first_block {
+        width: 90%;
+    }*/
+   /* .just_training .second_block {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }*/
+    .just_training .second_block .block_just_training{
+        margin-top: 250px;
+    }
+
+   header .menu_mobile {
+        display: block;
+    }
+ 
+    header .nav_bar {
+        display: none;
+    }
+    .free_training{
+        padding-top: 50px;
+    }
+    .just_training .second_block .block_just_training {
+        margin-top: 0px;
+    }
+}
+@media (max-width: 550px){
+    .section_items {
+        display: grid;
+        grid-template-columns: repeat(1, 85%);
+        justify-content: space-evenly;
+      
+    }
+}
+
+@media (max-width: 487px){
+    
+    .about_club .block_photo{
+        width: auto;
+    }
+    .about_club .block_photo img{
+        width: 100%;
+    }
+    .about_club .block_photo{
+        padding: 0px;
+    }
+    .about_club .block_text{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .free_training form{
+        flex-direction: column;
+    }
+    .free_training h1 {
+        font-size: 40px;
+    }
+    .free_training h3 {
+        font-size: 15px;
+    }
+   
+}
+
+@media (max-width: 425px){
+    .block_one .block_photo img{
+        height: 350px;
+    }
+    .corpus .corpus_images h2 {
+        margin-left: 0px; 
+    }
+}
+
+@media (max-width: 416px){
+    
+    .about_us .text .info{
+        flex-direction: column;     
+        padding-top: 0px;
+    }
+    .about_us .text h2{
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    .about_us .text p {
+        font-size: 20px;
+        font-style: italic;
+        line-height: 140%;
+        font-family: 'Open Sans';
+    }
+    .about_us .text .info .item {
+        padding: 15px;
+    }
+    .just_training .second_block .block_just_training h1 {
+        font-size: 30px;
+    }
+    .just_training .second_block .block_just_training p {
+        font-size: 15px;
+    }
+    .sign_up_block form {
+        flex-direction: column;
+        align-items: center;
+    }
+    footer{
+        flex-direction: column;
+    }
+    footer .logo h1{
+        padding-bottom:0px;
+    }
+    footer .phone{
+        margin-top: 20px;
+    }
+    footer .phone a{
+        padding-bottom: 0px;
+    }
+    footer .phone p {
+        padding-top: 0px;
+    }
+}
+
+@media (min-width:417px){
+    .about_us{
+        max-height: 402px;
+    }
+}
+
+@media (max-width: 375px){
+    .block_one .block_text{
+    padding-left: 0px;
+    padding-right: 0px;
+    }
+    .sign_up_block form {
+        flex-direction: column;
+    }
+    .sign_up_block form .mail {
+        width: 260px;
+    }
+    .free_training form .mail{
+        width: 260px;
+    }
+    
+    .free_training{
+        padding-left: 0px;
+    }
+}
